@@ -4,7 +4,7 @@
 
 ## Felsorolások
 
-## Számozatlan felsorolás
+### Számozatlan felsorolás
 
 - ez
 - egy
@@ -22,7 +22,7 @@ Ez a `<br>` sortörés parancsa.
 <br>
 Ez a <br> sortörés parancsa.
 
-## Kódblokk
+### Kódblokk
 
 ```CSS
 body{
@@ -30,7 +30,7 @@ body{
 }
 ```
 
-## Kiemelés
+### Kiemelés
 
 _Ez a szöveg dőlt_
 <br>
@@ -38,7 +38,7 @@ __Ez meg félköver__
 
 ___Ez félkövér és dőlt.___
 
-## Táblázat
+### Táblázat
 
 |A|B|C|
 |---:|:---:|:---|
