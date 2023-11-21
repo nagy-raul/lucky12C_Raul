@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Kávézó - Sütemények</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" data-bs-theme = "dark">
+            <div class="container-fluid">
+                
+              <a class="navbar-brand" href="index.html">
+                <img src="img/ikonok/49i4jo.svg" alt="coffee bean" id="icon">
+                Lucky</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="intro.html">Kezdőlap</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="kavefajtak.html">Kávéfajták</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="sutemenyek.html">Sütemények</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>                  
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <div class="banner">
+            
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="my-5">Lucky - Sütemények</h1>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" data-bs-toggle="modal" data-bs-target="#csokidarabosModal">
+                <div class="card h-100">
+                    <img src="img/suti/8110a2e3-c8da-4751-bbfb-92a8e5258854-min.jpg" class="card-img-top" alt="Csokidarabos keksz">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Csokidarabos keksz</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#islerModal">
+                <div class="card h-100">
+                    <img src="img/suti/biscuits07-min.jpg" class="card-img-top" alt="Isler">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Isler</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#vajasModal">
+                <div class="card h-100">
+                    <img src="img/suti/Coffee-Butter-Cookies-featured-480x270-min.jpg" class="card-img-top" alt="Vajas keksz">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Vajas keksz</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#karamellasModal">
+                <div class="card h-100">
+                    <img src="img/suti/Coffee-Cookies-Laid-on-a-Parchment-Paper-min.jpg" class="card-img-top" alt="Karamellás keksz">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Karamellás keksz</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#csokismandulaModal">
+                <div class="card h-100">
+                    <img src="img/suti/coffee-coookies-min.jpg" class="card-img-top" alt="Csokis mandula keksz">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Csokis mandula keksz</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#mogyorovajModal">
+                <div class="card h-100">
+                    <img src="img/suti/photo-min.jpg" class="card-img-top" alt="Mogyoróvaj keksz">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">Mogyoróvaj keksz</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <footer>
+      <div class="row mt-5">
+        <div class="col-sm-6 col-lg-4 offset-lg-1">
+          <h3 class="pt-3">Elérhetőségek</h3>
+          <ul>
+            <li> <img src="img/ikonok/mail_14.svg" alt="">
+              6900 Makó, Posta utca 4-6.
+            </li>
+            <li> <img src="img/ikonok/At_Sign_Nimbus.svg" alt="">
+              lucky@gmail.com
+            </li>
+            <li> <img src="img/ikonok/phone-call-svgrepo-com.svg" alt="">
+              +36 (30) 111-5555
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-4 offset-lg-1">
+          <h3 class="pt-3">Feliratkozás hírlevélre</h3>
+          <form action="">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="button-addon2" id="email">
+              <button class="btn btn-outline-success" type="button" id="button-addon2" onclick="feliratkozas()">Feliratkozás</button>
+            </div>
+          </form>
+          <p>&copy; Lucky Kávézó 2023</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" tabindex="-1" id="csokidarabosModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Csokidarabos keksz</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/suti/8110a2e3-c8da-4751-bbfb-92a8e5258854-min.jpg" alt="Csokidarabos keksz" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione magnam maiores inventore, explicabo sint dolorem suscipit mollitia dolore nesciunt deleniti cumque consectetur necessitatibus eaque libero sed? Nisi quisquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi quod eum tempora dignissimos cupiditate facere, inventore id animi illo placeat rerum mollitia in molestiae est possimus harum quo a!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="islerModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Isler</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/suti/biscuits07-min.jpg" alt="Isler" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione magnam maiores inventore, explicabo sint dolorem suscipit mollitia dolore nesciunt deleniti cumque consectetur necessitatibus eaque libero sed? Nisi quisquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi quod eum tempora dignissimos cupiditate facere, inventore id animi illo placeat rerum mollitia in molestiae est possimus harum quo a!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="vajasModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Vajas keksz</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/suti/Coffee-Butter-Cookies-featured-480x270-min.jpg" alt="Vajas keksz" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione magnam maiores inventore, explicabo sint dolorem suscipit mollitia dolore nesciunt deleniti cumque consectetur necessitatibus eaque libero sed? Nisi quisquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi quod eum tempora dignissimos cupiditate facere, inventore id animi illo placeat rerum mollitia in molestiae est possimus harum quo a!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="karamellasModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Karamellás keksz</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/suti/Coffee-Cookies-Laid-on-a-Parchment-Paper-min.jpg" alt="Karamellás keksz" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione magnam maiores inventore, explicabo sint dolorem suscipit mollitia dolore nesciunt deleniti cumque consectetur necessitatibus eaque libero sed? Nisi quisquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi quod eum tempora dignissimos cupiditate facere, inventore id animi illo placeat rerum mollitia in molestiae est possimus harum quo a!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="csokismandulaModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Csokis mandula keksz</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/suti/coffee-coookies-min.jpg" alt="Csokis mandula keksz" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione magnam maiores inventore, explicabo sint dolorem suscipit mollitia dolore nesciunt deleniti cumque consectetur necessitatibus eaque libero sed? Nisi quisquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi quod eum tempora dignissimos cupiditate facere, inventore id animi illo placeat rerum mollitia in molestiae est possimus harum quo a!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="mogyorovajModal">
+        <div class="modal-dialog modal-xl">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Mogyoróvaj keksz</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+              <div class="container-fluid">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <img src="img/suti/photo-min.jpg" alt="Mogyoróvaj keksz" class="img-fluid">
+                  </div>
+                  <div class="col-sm-8">
+                    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione magnam maiores inventore, explicabo sint dolorem suscipit mollitia dolore nesciunt deleniti cumque consectetur necessitatibus eaque libero sed? Nisi quisquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi quod eum tempora dignissimos cupiditate facere, inventore id animi illo placeat rerum mollitia in molestiae est possimus harum quo a!</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      function feliratkozas(){
+        let email = document.getElementById("email").value;
+        console.log(email)
+        if(email == ""){
+          alert("Kérem adja meg az e-mail címét!")
+        } else{
+          alert("Sikeresen feliratkozott")
+        }
+      }
+    </script>
+</body>
+</html>

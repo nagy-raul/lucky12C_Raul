@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredericka+the+Great&display=swap');
+@import url('https://fonts.cdnfonts.com/css/inter');
+
+h1{
+    color: #1F5B25;
+    font-family: 'Fredericka the Great', serif;
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.card-title{
+    color: #000;
+    font-family: 'Inter';
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+}
+
+
+nav{
+    height: 80px;
+    background-color: #1F5B25;
+}
+
+#icon{
+    width: 30px;
+    height: 30px;
+}
+
+.banner{
+    background-image: url('../img/banner.jpg');
+    height: 220px;
+    background-position: center center;
+    background-size: cover;
+}
+
+body{
+    background-color: #FBEED8;
+    overflow-x: hidden;
+}
+
+footer{
+    background-color: #1F5B25;;
+    flex-shrink: 0;
+    color: #FFF;
+    font-family: 'Inter';
+    font-style: normal;
+    line-height: normal;
+}
+
+footer li{
+    list-style-type: none;
+}
+
+.modal-header, .modal-footer{
+    background-color: #1F5B25;
+    color: white;
+}
+
+.modal-body{
+    background-color: #FBEED8;
+}
+
+.card:hover{
+    box-shadow: 0px 0px 5px #1F5B25;
+    cursor: pointer;
+}
+
+#home{
+    background-image: url('../img/homebg-min.jpg');
+    height: 100vh;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+}
+
+.intro{
+    color: #ffff;
+    height: 100vh;
+    text-align: center;
+}
+
+.intro h1{
+    color: #ffff;
+}
+
+.intro .col-md-8{
+    background-color: rgba(0,0,0,0.4);
+}
+
+.blog-img{
+    border: 1px solid #1F5B25;
+    border-radius: 4px;
+}
+
+.cikk{
+    text-align: justify;
+}
+
+.zold{
+    color: #1F5B25;
+}

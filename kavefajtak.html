@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Kávézó - Kávé fajták</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" data-bs-theme = "dark">
+            <div class="container-fluid">
+                
+              <a class="navbar-brand" href="index.html">
+                <img src="img/ikonok/49i4jo.svg" alt="coffee bean" id="icon">
+                Lucky</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="intro.html">Kezdőlap</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="kavefajtak.html">Kávéfajták</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="sutemenyek.html">Sütemények</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="blog.html">Blog</a>                  
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <div class="banner">
+            
+        </div>
+    </header>
+
+
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="my-5">Lucky - Kávéfajták</h1>
+        </div>
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col" data-bs-toggle="modal" data-bs-target="#americanoModal">
+              <div class="card h-100">
+                <img src="img/kave/bruno-cervera-YH7mGnigHRs-unsplash-min.jpg" class="card-img-top" alt="Americano">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Americano</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#cappucinoModal">
+              <div class="card h-100">
+                <img src="img/kave/fahmi-fakhrudin-nzyzAUsbV0M-unsplash-min.jpg" class="card-img-top" alt="Cappucino">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Cappucino</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#doppioModal">
+              <div class="card h-100">
+                <img src="img/kave/karl-fredrickson-TYIzeCiZ_60-unsplash-min.jpg" class="card-img-top" alt="Doppio">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Doppio</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#ristrettoModal">
+              <div class="card h-100">
+                <img src="img/kave/mike-kenneally-zlwDJoKTuA8-unsplash-min.jpg" class="card-img-top" alt="Ristretto">
+                <div class="card-body">
+                  <h5 class="card-title text-center">Ristretto</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col" data-bs-toggle="modal" data-bs-target="#cafelatteModal">
+                <div class="card h-100">
+                  <img src="img/kave/nathan-dumlao-6VhPY27jdps-unsplash-min.jpg" class="card-img-top" alt="Café latte">
+                  <div class="card-body">
+                    <h5 class="card-title text-center">Café latte</h5>
+                  </div>
+                </div>
+              </div>
+          </div>
+    </div>
+
+
+    <footer>
+      <div class="row mt-5">
+        <div class="col-sm-6 col-lg-4 offset-lg-1">
+          <h3 class="pt-3">Elérhetőségek</h3>
+          <ul>
+            <li> <img src="img/ikonok/mail_14.svg" alt="">
+              6900 Makó, Posta utca 4-6.
+            </li>
+            <li> <img src="img/ikonok/At_Sign_Nimbus.svg" alt="">
+              lucky@gmail.com
+            </li>
+            <li> <img src="img/ikonok/phone-call-svgrepo-com.svg" alt="">
+              +36 (30) 111-5555
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-4 offset-lg-1">
+          <h3 class="pt-3">Feliratkozás hírlevélre</h3>
+          <form action="">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="button-addon2" id="email">
+              <button class="btn btn-outline-success" type="button" id="button-addon2" onclick="feliratkozas()">Feliratkozás</button>
+            </div>
+          </form>
+          <p>&copy; Lucky Kávézó 2023</p>
+        </div>
+      </div>
+    </footer>
+
+    <div class="modal" tabindex="-1" id="americanoModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Americano</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/kave/bruno-cervera-YH7mGnigHRs-unsplash-min.jpg" alt="Americano" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione magnam maiores inventore, explicabo sint dolorem suscipit mollitia dolore nesciunt deleniti cumque consectetur necessitatibus eaque libero sed? Nisi quisquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi quod eum tempora dignissimos cupiditate facere, inventore id animi illo placeat rerum mollitia in molestiae est possimus harum quo a!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="cappucinoModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Cappucino</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/kave/fahmi-fakhrudin-nzyzAUsbV0M-unsplash-min.jpg" alt="Cappucino" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione magnam maiores inventore, explicabo sint dolorem suscipit mollitia dolore nesciunt deleniti cumque consectetur necessitatibus eaque libero sed? Nisi quisquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi quod eum tempora dignissimos cupiditate facere, inventore id animi illo placeat rerum mollitia in molestiae est possimus harum quo a!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="doppioModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Doppio</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/kave/karl-fredrickson-TYIzeCiZ_60-unsplash-min.jpg" alt="Doppio" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione magnam maiores inventore, explicabo sint dolorem suscipit mollitia dolore nesciunt deleniti cumque consectetur necessitatibus eaque libero sed? Nisi quisquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi quod eum tempora dignissimos cupiditate facere, inventore id animi illo placeat rerum mollitia in molestiae est possimus harum quo a!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="ristrettoModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Ristretto</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/kave/mike-kenneally-zlwDJoKTuA8-unsplash-min.jpg" alt="Ristretto" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione magnam maiores inventore, explicabo sint dolorem suscipit mollitia dolore nesciunt deleniti cumque consectetur necessitatibus eaque libero sed? Nisi quisquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi quod eum tempora dignissimos cupiditate facere, inventore id animi illo placeat rerum mollitia in molestiae est possimus harum quo a!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal" tabindex="-1" id="cafelatteModal">
+      <div class="modal-dialog modal-xl">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Café latte</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body">
+            <div class="container-fluid">
+              <div class="row">
+                <div class="col-sm-4">
+                  <img src="img/kave/nathan-dumlao-6VhPY27jdps-unsplash-min.jpg" alt="Cafe-latte" class="img-fluid">
+                </div>
+                <div class="col-sm-8">
+                  <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ratione magnam maiores inventore, explicabo sint dolorem suscipit mollitia dolore nesciunt deleniti cumque consectetur necessitatibus eaque libero sed? Nisi quisquam eius. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi sequi quod eum tempora dignissimos cupiditate facere, inventore id animi illo placeat rerum mollitia in molestiae est possimus harum quo a!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-success" data-bs-dismiss="modal">Bezárás</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      function feliratkozas(){
+        let email = document.getElementById("email").value;
+        console.log(email)
+        if(email == ""){
+          alert("Kérem adja meg az e-mail címét!")
+        } else{
+          alert("Sikeresen feliratkozott")
+        }
+      }
+    </script>
+</body>
+</html>

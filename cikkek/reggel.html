@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="hu">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lucky Kávézó - Blo</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg" data-bs-theme = "dark">
+            <div class="container-fluid">
+                
+              <a class="navbar-brand" href="../intro.html">
+                <img src="../img/ikonok/49i4jo.svg" alt="coffee bean" id="icon">
+                Lucky</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../intro.html">Kezdőlap</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../kavefajtak.html">Kávéfajták</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="../sutemenyek.html">Sütemények</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link active" href="../blog.html">Blog</a>                  
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </nav>
+
+        <div class="banner">
+            
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="row text-center">
+            <h1 class="my-5">Lucky - Blog</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4">
+                <img src="../img/kave/bruno-cervera-YH7mGnigHRs-unsplash-min.jpg" alt="Reggeli ráhangolódás" class="img-fluid blog-img mb-3">
+            </div>
+
+            <div class="col-md-8">
+                <h2 class="zold">Reggeli ráhangolódás</h2>
+                <p class="cikk">Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci impedit doloremque magnam culpa optio aliquam voluptatibus similique animi maxime iste ullam laborum laudantium sunt, veritatis suscipit reiciendis perspiciatis deserunt voluptatem accusamus ducimus, blanditiis quibusdam maiores nam. Architecto dolores voluptate, natus, consequatur consectetur blanditiis sapiente deserunt esse facilis qui vel explicabo, molestiae exercitationem error? Et veniam excepturi laborum eligendi ipsam, natus, quod sunt dicta quam commodi itaque fugit? Ad non voluptatum in pariatur vitae eos asperiores provident reiciendis illo vel nostrum quos corporis consequuntur amet vero quasi explicabo tenetur numquam temporibus, iure atque facere fugit. Pariatur ad saepe sapiente commodi omnis.</p>
+                <p class="cikk">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Nulla ipsum deleniti omnis provident inventore obcaecati, pariatur autem recusandae aliquid, numquam fugit et vero quae, laborum soluta sed. Dolorum, vero architecto.</p>
+                <p class="cikk">Aperiam saepe molestias esse rerum suscipit distinctio itaque eligendi illum, incidunt totam animi, voluptas nihil. Ipsam explicabo ducimus optio labore sequi, consectetur quis quos, temporibus, voluptatem veritatis sit rerum ipsa!</p>
+                <p class="cikk">Doloribus impedit corrupti ipsam animi odit, sunt velit aspernatur eum voluptatum nulla debitis hic iusto fugit mollitia, repellat error voluptatem adipisci assumenda repellendus at deserunt consectetur possimus placeat optio. Obcaecati.</p>
+                <p class="cikk">Nemo, tempore debitis doloremque est quod error minus nobis aliquam. Ad impedit ipsum accusantium atque quod obcaecati quia tempora. Nam sapiente itaque repellat rerum veniam ullam est voluptate, voluptatem enim.</p>         
+                <h5 class="text-end zold">Szerző: Kiss Andrea Frissítés dátuma: 2023.11.09.</h5>
+                <h5>Hozzászólások:</h5>
+                <p><span class="badge text-bg-success mx-3">Anna</span>Király volt ez a cikk!</p>
+                <p><span class="badge text-bg-success mx-3">Lehel</span>Túl sok kávé</p>
+                <p><span class="badge text-bg-success mx-3">Joe</span>balls</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+      <div class="row mt-5">
+        <div class="col-sm-6 col-lg-4 offset-lg-1">
+          <h3 class="pt-3">Elérhetőségek</h3>
+          <ul>
+            <li> <img src="../img/ikonok/mail_14.svg" alt="">
+              6900 Makó, Posta utca 4-6.
+            </li>
+            <li> <img src="../img/ikonok/At_Sign_Nimbus.svg" alt="">
+              lucky@gmail.com
+            </li>
+            <li> <img src="../img/ikonok/phone-call-svgrepo-com.svg" alt="">
+              +36 (30) 111-5555
+            </li>
+          </ul>
+        </div>
+        <div class="col-sm-6 col-lg-4 offset-lg-1">
+          <h3 class="pt-3">Feliratkozás hírlevélre</h3>
+          <form action="">
+            <div class="input-group mb-3">
+              <input type="text" class="form-control" placeholder="E-mail" aria-label="E-mail" aria-describedby="button-addon2" id="email">
+              <button class="btn btn-outline-success" type="button" id="button-addon2" onclick="feliratkozas()">Feliratkozás</button>
+            </div>
+          </form>
+          <p>&copy; Lucky Kávézó 2023</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"></script>
+
+    <script>
+      function feliratkozas(){
+        let email = document.getElementById("email").value;
+        console.log(email)
+        if(email == ""){
+          alert("Kérem adja meg az e-mail címét!")
+        } else{
+          alert("Sikeresen feliratkozott")
+        }
+      }
+    </script>
+</body>
+</html>
